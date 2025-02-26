@@ -24,10 +24,6 @@
 
             }
 
-            .row {
-                display: flex;
-            }
-
             .box {
                 padding: 20px;
                 text-align: center;
@@ -38,11 +34,10 @@
             }
 
             .container {
-                max-width: 800px;
-                margin: auto;
+                max-width: 1000px;
                 padding: 20px;
                 border: 4px solid black;
-                background-color: rgb(199, 59, 59);
+                background-color: bisque;
             }
 
             .text {
@@ -53,12 +48,12 @@
             .header {
                 background-color: red;
                 border: 3px solid black;
+                text-align: center;
             }
 
             .nav {
                 background-color: blue;
                 border: 3px solid black;
-                text-align: center;
             }
 
             .section {
@@ -88,16 +83,21 @@
             <h1>CHALLENGE 3</h1>
         </div>
         <div class="container">
-            <div class="box header">header</div>
-            <div class="box nav">nav</div>
+            <div class="row box header">header</div>
+            <div class="row box nav">nav</div>
+        
 
-            <div class="row">
-                <div class="col-md-6 box section">section</div>
-                <div class="col-md-6 box aside">aside</div>
+            <div class="col-12">
+                    <div class="col-8">
+                        <div class="col-8 box section">section</div>
+                        <div class="col-8 box aside">aside</div>
+                    </div>
+                    <div class="col-4 box article">article</div>
+                <div>
+                </div>
             </div>
 
-            <article class="box article">article</article>
-            <footer class="box footer">footer</footer>
+            <footer class="row box footer">footer</footer>
         </div>
 
 
